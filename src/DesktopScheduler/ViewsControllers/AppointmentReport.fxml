@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="297.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DesktopScheduler.AppointmentReport">
+   <children>
+      <Label layoutX="31.0" layoutY="14.0" text="Appointment Report">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="287.0" layoutY="249.0" mnemonicParsing="false" onAction="#exitButtonPressed" text="Exit" />
+      <ComboBox fx:id="monthComboBox" layoutX="94.0" layoutY="85.0" prefWidth="150.0" promptText="Months" />
+      <ComboBox fx:id="typeComboBox" layoutX="93.0" layoutY="148.0" prefWidth="150.0" promptText="Types" />
+      <Label layoutX="93.0" layoutY="67.0" text="Month:" />
+      <Label layoutX="93.0" layoutY="130.0" text="Type:" />
+      <Button fx:id="findTotalButton" layoutX="209.0" layoutY="249.0" mnemonicParsing="false" onAction="#findTotalButtonPressed" text="Find Total" />
+      <Label layoutX="93.0" layoutY="192.0" text="Appointment Total:" />
+      <Label fx:id="appointmentTotalLabel" layoutX="203.0" layoutY="192.0" />
+   </children>
+</AnchorPane>
